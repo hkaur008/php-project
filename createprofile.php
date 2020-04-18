@@ -20,47 +20,28 @@
 <div class="col-md-6">
         
         <h2> login here</h2>
-    <form action="validation.php" method="post">
+    <form action="createprofile2.php" method="post">
 
     <div class="form-group">
-        <label>username</label>
-        <input type="text" name="username" class="form-control" required>
-         </div>
-
          <div class="form-group">
-        <label>password</label>
-        <input type="password" name="password" class="form-control" required>
+        <label>address</label>
+        <input type="text" name="address" class="form-control" >
+         </div>
+         <div class="form-group">
+        <label>email</label>
+        <input type="text" name="email" class="form-control" >
+         </div>
+         <div class="form-group">
+        <label>phone</label>
+        <input type="number" name="phone" class="form-control" >
          </div>
         <button type="submit" class="btn btn-primary">submit</button>
          </form>
             </div>
-<div class="col-md-6">
-        
-        <h2> SIGN UP </h2>
-    <form action="registration.php" method="post">
 
-    <div class="form-group">
-        <label>username</label>
-        <input type="text" name="username" class="form-control" required>
-         </div>
-
-         <div class="form-group">
-        <label>password</label>
-        <input type="password" name="password" class="form-control" required>
-         </div>
-        <button type="submit" class="btn btn-primary">submit</button>
-         </form>
-         <?php 
-         session_start();
-         if(isset($_SESSION['flag']))
-         {
-             echo $_SESSION['flag'] ;
-         }
-         session_abort();
-
-         ?>
-            </div>
 </div>
 </div>
 </body>
 </html>
+
+

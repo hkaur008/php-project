@@ -15,11 +15,23 @@ if($num==1)
 { echo "i foud it";
 
   $row=mysqli_fetch_assoc($result);
-  printf("%s %s %d %s",$row['username'],$row['email'],$row['phone'],$row['address']);
+  printf("%s %s %d %s",$row['username'],$row['email'],$row['phone'],$row['home']);
 }
-else{
-    echo "nhi milla";
-}
-
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include("head.php")?>
+<title>home</title>
+<link href="css/home.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+welcome to profile  page!!!
+
+<br><a href="createprofile.php">Edit profile</a>
+<a href="logout.php">logout</a>
+</body>
+</html>
