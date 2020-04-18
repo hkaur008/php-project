@@ -32,6 +32,15 @@
         <input type="password" name="password" class="form-control" required>
          </div>
         <button type="submit" class="btn btn-primary">submit</button>
+        <?php 
+         session_start();
+         if(isset($_SESSION['flag2']))
+         {
+            echo $_SESSION['flag2'] ;
+         }
+         session_abort();
+
+         ?>
          </form>
             </div>
 <div class="col-md-6">
